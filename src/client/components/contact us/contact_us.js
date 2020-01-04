@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const Contact_us = () => {
@@ -8,31 +8,26 @@ const Contact_us = () => {
     const { name, value } = e.target;
     setContact({ ...contact, [name]: value });
   };
+  //   const sendMessage=()=>(
+  //       <Redirect to="/" />
+  //   )
   return (
     <div>
       <div className="split right">
-        <div className="split left1"></div>
-        <div className="centered">
-            <h3>Send us a Message</h3>
+        <div className="split contactleft"></div>
+        <div className="centered contactus">
+          <h3>Send us a Message</h3>
           <Form>
+            <h5 align="left">TELL US YOUR NAME*</h5>
             <Row form>
-                <h5>TELL US YOUR NAME*</h5>
               <Col md={6}>
                 <FormGroup>
-                  <Input
-                    type="text"
-                    name="fname"
-                    placeholder="First name"
-                  />
+                  <Input type="text" name="fname" placeholder="First name" />
                 </FormGroup>
               </Col>
               <Col md={6}>
                 <FormGroup>
-                  <Input
-                    type="text"
-                    name="lname"
-                    placeholder="Last name"
-                  />
+                  <Input type="text" name="lname" placeholder="Last name" />
                 </FormGroup>
               </Col>
             </Row>
@@ -54,13 +49,19 @@ const Contact_us = () => {
             </FormGroup>
             <h5 align="left">MESSAGE*</h5>
             <FormGroup>
-            <Col md={15}>
-            <Input type="textarea" name="text" placeholder="Write us a message" />        
-            </Col>
+              <Col md={15}>
+                <Input
+                  type="textarea"
+                  name="text"
+                  placeholder="Write us a message"
+                />
+              </Col>
             </FormGroup>
-            
-            
-            <Button style={{width:"40%"}}>Send Message</Button>
+            <Link to="/">
+              <Button style={{ width: "40%" }} >
+                Send Message
+              </Button>
+            </Link>
           </Form>
         </div>
       </div>
