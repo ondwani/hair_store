@@ -32,6 +32,7 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
+  devtool: "cheap-module-source-map",
   devServer: {
     historyApiFallback: true,
     port: 3000,

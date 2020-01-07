@@ -33,7 +33,7 @@ const Navbar = () => {
 
                  <li className = "nav-item" >
                  <NavLink to = "/contact" className = "nav-link" >
-                    Contact Us
+                    Customer Service
                  </NavLink>
                  </li>
 

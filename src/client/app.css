@@ -1,6 +1,7 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Fira+Sans|Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
 /* Split the screen in half */
 .split {
   height: 100%;
@@ -87,9 +88,8 @@ padding-top: 50px;
 /* .mail{
   background: url(./assets/icons/envelope.svg) no-repeat scroll 7px 7px;
   padding-left:30px; 
-  
-
 } */
+
 /* -------------------- */
 #input_container {
   position:relative;
@@ -114,8 +114,6 @@ padding-top: 50px;
   width:22px;
   height:24px;
 }
-
-
 .background{
   background-image: url("https://images.unsplash.com/photo-1504576249-c00dd23c481c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   height: 100vh;
@@ -123,12 +121,10 @@ padding-top: 50px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .about {
 color: black;
 font-family:'Nunito', sans-serif ;
 }
-
 .aboutpar {
   color: white;
   font-family: 'Nunito', sans-serif;
@@ -136,7 +132,6 @@ font-family:'Nunito', sans-serif ;
 /* .Remember {
   padding: 10px
 }
-
 .logo{
   color:rgb(255, 255, 255);
   text-shadow: rgb(175, 97, 24);
@@ -147,6 +142,8 @@ font-family:'Nunito', sans-serif ;
   left: 0;
   background:url("https://images.unsplash.com/photo-1531889334630-8e71077eade4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat;
   background-size: cover;
+  color: white;
+  padding: 200px;
 }
 .contactus h5{
   font-size: medium;
@@ -168,28 +165,47 @@ font-family:'Nunito', sans-serif ;
   color:#f5f5f5;
   line-height: 60px;
   }
-   
+.display-3 {
+  font-family: 'DM Serif Display', serif;
+  color: #D8BFD8 !important;
+}
+ 
   /* Heading for Parallax Section */ 
-  .paral h1 {
+.paral h1 {
   color: rgba(255, 255, 255, 0.8);
   color: rgb(255, 255, 255);
   font-size: 60px;
   padding-top: 60px;
   line-height: 100px;
   }
-  .btn-header{
+.btn-header{
     width: 13%;
   }
-  .jumbotron{
+.jumbotron{
     border-radius: 0 !important;
   }
 .jumbo2{
   margin-top: 10%;
 }
-.jumbo2 h2{
-  font-family: 'Courgette', cursive;;
+.jumbo2 h1{
+  font-family: 'Fira Sans', sans-serif;
 }
-
 .card{
   border-radius: 0rem;
 }
+
+.image-5-wig{
+  color: white;
+  background-image: url(https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-7-tools{
+
+  color:black;
+  background: url(https://images.immediate.co.uk/production/volatile/sites/28/2019/02/hair-straighteners-what-to-do-if-your-child-gets-burned_130000-42c78d2.jpg?quality=90&resize=620,413);
+  background-repeat: no-repeat; 
+  background-size:  cover;
+}
+

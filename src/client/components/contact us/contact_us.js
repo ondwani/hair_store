@@ -14,7 +14,14 @@ const Contact_us = () => {
   return (
     <div>
       <div className="split right">
-        <div className="split contactleft"></div>
+        <div className="split contactleft">
+          <h5>Address</h5>
+          <h6>Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</h6>
+          <h5>Let's talk</h5>
+          <h6>+254727000000</h6>
+          <h5>General Support</h5>
+          <h6>contact@example.com</h6>
+        </div>
         <div className="centered contactus">
           <h3>Send us a Message</h3>
           <Form>

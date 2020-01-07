@@ -1,0 +1,124 @@
+[
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Straight",
+        "color":"Black",
+        "density": ["150", "180", "200", "230" ],
+        "origin":"Human hair",
+        "price": "100usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Body Wave",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "100usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Loose Wave",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Deep Wave",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Jerry Curl",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Kinky Curly",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Water Wave",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "1200usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Natural Wave",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Fumi",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Kinky Straight",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    },
+    {
+        "length":["10inch", "12inch, 14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Yaki",
+        "color":"Black",
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120usd",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": " "
+    }
+
+]

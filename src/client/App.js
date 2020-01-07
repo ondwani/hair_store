@@ -8,6 +8,7 @@ import History from './utils/history';
 import Signup from './components/signup/signup';
 import Login from './components/login/login';
 import Navbar from "./components/navbar/navbar";
+import Shop from "./components/shop/shop";
 
 
 
@@ -21,7 +22,8 @@ const App = () => (
        <Route path = "/signup" component = { Signup }/>
        <Route path = "/"  exact component = { Home } />
        <Route path = "/about"  component = { About } />    
-       <Route path = "/contact"  component = { Contactus } />  
+       <Route path = "/contact"  component = { Contactus } /> 
+       <Route path = "/shop" component = { Shop }/>
      </Switch>
    </Router>
    </div>
