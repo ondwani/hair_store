@@ -209,3 +209,9 @@ font-family:'Nunito', sans-serif ;
   background-size:  cover;
 }
 
+.shopHeader{
+  background: url("https://images.pexels.com/photos/953266/pexels-photo-953266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 60vh;
+  background-repeat: no-repeat; 
+  background-size:  cover;
+}

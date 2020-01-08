@@ -1,11 +1,14 @@
-import React from 'react';
-import Products from '../products/products';
-
+import React from "react";
+import Products from "../products/products";
 
 const Shop = () => {
-    return (
-        <Products/>
-    )
-}
+  return (
+    <div>
+        <div className="row shopHeader">
+        </div>
+      <Products />
+    </div>
+  );
+};
 
-export default Shop
+export default Shop;

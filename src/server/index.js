@@ -7,7 +7,7 @@ const bodyparser = require ("body-parser")
 const app = express(); //using express methods
 
 mongoose.connect("mongodb://localhost:27017/deeshairstore", {useNewUrlParser: true, useUnifiedTopology: true})
-.then (success => console.log("data base connected succesfully"))
+.then (success => console.log("Database connected succesfully"))
 .catch(err => console.error(err))
 
 app.use(express.static('dist'));
