@@ -4,8 +4,7 @@ import Products from "../products/products";
 const Shop = () => {
   return (
     <div>
-        <div className="row shopHeader">
-        </div>
+        <div className="row shopHeader"></div>
       <Products />
     </div>
   );

@@ -9,6 +9,7 @@ import Signup from './components/signup/signup';
 import Login from './components/login/login';
 import Navbar from "./components/navbar/navbar";
 import Shop from "./components/shop/shop";
+import Sale from "./components/sale/sale";
 
 
 
@@ -21,9 +22,10 @@ const App = () => (
        <Route path = "/login"  component = { Login } />
        <Route path = "/signup" component = { Signup }/>
        <Route path = "/"  exact component = { Home } />
-       <Route path = "/about"  component = { About } />    
-       <Route path = "/contact"  component = { Contactus } /> 
+       <Route path = "/about" component = { About } />    
+       <Route path = "/contact" component = { Contactus } /> 
        <Route path = "/shop" component = { Shop }/>
+       <Route path = "/sale" component = { Sale } />
      </Switch>
    </Router>
    </div>

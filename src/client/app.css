@@ -1,6 +1,7 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Fira+Sans|Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
 /* Split the screen in half */
 .split {
@@ -188,7 +189,9 @@ font-family:'Nunito', sans-serif ;
   margin-top: 10%;
 }
 .jumbo2 h1{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', Semi-Bold Italic;
+  background-color:#E1D7CA;
+
 }
 .card{
   border-radius: 0rem;
@@ -196,7 +199,7 @@ font-family:'Nunito', sans-serif ;
 
 .image-5-wig{
   color: white;
-  background-image: url(https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80);
+  background-image: url(https://images.pexels.com/photos/1537496/pexels-photo-1537496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -204,13 +207,20 @@ font-family:'Nunito', sans-serif ;
 .image-7-tools{
 
   color:black;
-  background: url(https://images.immediate.co.uk/production/volatile/sites/28/2019/02/hair-straighteners-what-to-do-if-your-child-gets-burned_130000-42c78d2.jpg?quality=90&resize=620,413);
+  background: url(https://www.mybeauty88.my/image/yiccomax/image/cache/data/hair_tool_banner-865x356.png);
   background-repeat: no-repeat; 
   background-size:  cover;
 }
 
 .shopHeader{
   background: url("https://images.pexels.com/photos/953266/pexels-photo-953266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 60vh;
+  background-repeat: no-repeat; 
+  background-size:  cover;
+}
+
+.saleHeader{
+  background: url("https://images.pexels.com/photos/1591055/pexels-photo-1591055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   height: 60vh;
   background-repeat: no-repeat; 
   background-size:  cover;
