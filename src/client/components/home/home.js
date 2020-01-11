@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./home.css";
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
@@ -31,27 +32,27 @@ const useStyles = makeStyles(theme => ({
 const tileData = [
   {
     img: "https://fineartsbd.com/wp-content/uploads/2019/06/fascinating-bob-hairstyles-for-black-women-6.jpg",
-    title: "Image",
+    title: "",
     author: "author"
   },
   {
     img: "https://cdn.shopify.com/s/files/1/0269/2245/1047/products/f59ecb2b80b7bd2deac75c54e2894510_fb26cd2f-ffba-469e-8815-e65bea2aef49_590x.png?v=1577970671",
-    title: "Image",
+    // title: "Image",
     author: "author"
   },
   {
     img: "https://assets.bigcartel.com/product_images/243414719/__3c+skin++hait10ggg10bbf5222ggfgfgggggfhfggf.jpg?auto=format&fit=max&h=1000&w=1000",
-    title: "Image",
+    // title: "Image",
     author: "author"
   },
   {
     img: "https://4.bp.blogspot.com/-0T9Ji-5V2KU/WdXNxbtMQlI/AAAAAAAAH8g/K-mNxM2ICtg2vzDKqXEOrXK1LNcd6P0BgCLcBGAs/s1600/Nancie%2BMwai%2BNew%2BHair%2B%25283%2529.jpg",
-    title: "Image",
+    // title: "Image",
     author: "author"
   },
   {
    img: "https://www.sensationnel.com/wp-content/uploads/Empire_WigSAP_S_Jean_main-600x800.jpg",
-   title: "Image",
+  //  title: "Image",
    author: "author"
  }
 ];
@@ -60,11 +61,11 @@ const Home = () => {
   const classes = useStyles();
   return (
     <div>
-      <div className="row">
+      <div className="row" id="home">
         <div className="col-md-8">
           <div className="jumbotron paral paralsec">
             <h1 className="display-3" align="left">
-              New Year
+              New Hair
             </h1>
             <h1 className="display-3" align="right">
               New You
@@ -77,6 +78,13 @@ const Home = () => {
           <button className="btn ">SAVE NOW</button>
         </div>
       </div>
+      <div className="container review">
+        <h1 align="center">Good quality Hair at affordable prices</h1>
+        <h5>
+          Follow us on instagram page to see more reviews, participate in
+          give aways and know more about pop-up stores around you
+        </h5>
+        </div>
       <CardDeck style={{ padding: "1%", marginTop: "-1.2rem" }}>
         <Card
           style={{
@@ -84,12 +92,16 @@ const Home = () => {
               "url(https://images.pexels.com/photos/65438/pexels-photo-65438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
           }}
         >
+          
           <CardBody>
             <div align="center">
-              <h5 style={{ paddingTop: "30%", color: "white" }}>
+              <h4 style={{ paddingTop: "30%", color: "black" }}>
                 Visit our Store
-              </h5>
+              </h4>
+              <Link to="/contact">
               <Button>Location</Button>
+
+              </Link>
             </div>
           </CardBody>
         </Card>
@@ -100,8 +112,10 @@ const Home = () => {
           }}
         >
           <CardBody align="center">
-            <h5 style={{ paddingTop: "30%" }}>Gift your loved one some Hair</h5>
+            <h4 style={{ paddingTop: "30%" }}>Gift your loved one some Hair</h4>
+            <Link to ="/shop">
             <Button>Shop now</Button>
+            </Link>
           </CardBody>
         </Card>
         <Card
@@ -111,19 +125,32 @@ const Home = () => {
           }}
         >
           <CardBody align="center">
-            <h5 style={{ paddingTop: "30%", color: "white" }}>
+            <h4 style={{ paddingTop: "30%", color: "black" }}>
               Wholesale Bundles
-            </h5>
+            </h4>
+            <Link to = "/shop">
             <Button>Shop now</Button>
+            </Link>
+           
           </CardBody>
         </Card>
       </CardDeck>
+      <div className="container review">
+        <h1 align="center">Hair Products and Tools are also available</h1>
+        <h5>
+          Follow us on instagram page to see more reviews, participate in
+          give aways and know more about pop-up stores around you
+        </h5>
+        </div>
       <div className="row" style={{ padding: "1%", paddingLeft: "2%" }}>
         <div align="center" className="col-md-6 image-5-wig">
-          <h5 style={{ paddingTop: "30%" }}>
+          <h4 style={{ paddingTop: "60%", color: "black" }}>
             Looking for your first wig. We got you
-          </h5>
+          </h4>
+          <Link to = "/shop">
           <button className="btn">Shop now</button>
+          </Link>
+          
         </div>
         <div className="col-md-6">
           <div
@@ -136,7 +163,7 @@ const Home = () => {
               marginBottom: "1rem"
             }}
           >
-            <h5 style={{ paddingTop: "30%" }}>Oils Available</h5>
+            <h5 style={{ paddingTop: "30%", color:"black"  }}>Oils Available</h5>
             <button className="btn">Shop now</button>
           </div>
           <div className="image-7-tools" align="center">
@@ -148,7 +175,7 @@ const Home = () => {
       <div className="container review">
         <h1 align="center">Follow us on Instagram</h1>
         <h5>
-          Follow us on our instagram page to see more reviews, participate in
+          Follow us on instagram page to see more reviews, participate in
           give aways and know more about pop-up stores around you
         </h5>
       </div>
@@ -208,54 +235,43 @@ const Home = () => {
                 <div className="col-md-6 px-4">
                   <h6> Help us</h6>
                   <div className="row ">
-                    <div className="col-md-6">
+                    <div className="col-md-6 px-4">
                       <ul>
                         <li>
-                          {" "}
-                          <a href="#"> Home</a>{" "}
+                          <a  href="#home"> Home</a>{" "}
                         </li>
                         <li>
-                          {" "}
-                          <a href="#"> Shop</a>{" "}
+                          <Link to="/shop"> Shop</Link>{" "}
                         </li>
                         <li>
-                          {" "}
-                          <a href="#"> About</a>{" "}
+                          <Link to="/about"> About</Link>{" "}
                         </li>
                         <li>
-                          {" "}
-                          <a href="#"> Sale</a>{" "}
+                          <Link to="/sale"> Sale</Link>{" "}
                         </li>
                         <li>
-                          {" "}
-                          <a href="#"> Customer Service</a>{" "}
+                          <Link to="/contact"> Service</Link>{" "}
                         </li>
-                        <li>
-                          {" "}
-                          <a href="#"> Log in</a>{" "}
-                        </li>
+                        {/* <li>
+                          <Link to="/login"> Log in</Link>{" "}
+                        </li> */}
                       </ul>
                     </div>
                     <div className="col-md-6 px-4">
                       <ul>
                         <li>
-                          {" "}
                           <a href="#"> Fax</a>{" "}
                         </li>
                         <li>
-                          {" "}
                           <a href="#"> Terms</a>{" "}
                         </li>
                         <li>
-                          {" "}
                           <a href="#"> Policy</a>{" "}
                         </li>
                         <li>
-                          {" "}
                           <a href="#"> Refunds</a>{" "}
                         </li>
                         <li>
-                          {" "}
                           <a href="#"> M-Pesa</a>{" "}
                         </li>
                       </ul>

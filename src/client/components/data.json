@@ -118,7 +118,18 @@
         "price": "120",
         "quality": ["10A", "8A"],
         "frontal": ["4*4", "13*4", "360"],
-        "image": "https://www.asteriahair.com/media/catalog/product/cache/1/image/450x450/9df78eab33525d08d6e5fb8d27136e95/a/s/xasteria-hair-wig-kinky-straight-wig_.jpg.pagespeed.ic.Y0UVvQBL69.jpg "
+        "image": "http://blog.classiclacewigs.net/wp-content/uploads/2017/03/L0DRMKBKEKA3WRXR1I.jpg "
+    },
+    {
+        "length":["10inch", "12inch", "14inch", "16 inch", "18inch", "20inch", "22inch", "24inch", "26inch", "28inch", "30inch"],
+        "type":"Bob",
+        "color":["black","1b/30", "1b/99j", "1b/burg", "2#", "4#", "99j","613"],
+        "density":["150", "180", "200", "230" ],
+        "origin":"Human hair", 
+        "price": "120",
+        "quality": ["10A", "8A"],
+        "frontal": ["4*4", "13*4", "360"],
+        "image": "https://www.sensationnel.com/wp-content/uploads/Empire_WigSAP_S_Jean_main-600x800.jpg"
     }
 
 ]

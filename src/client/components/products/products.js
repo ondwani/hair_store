@@ -10,6 +10,11 @@ import Data from "../data.json";
 
 const Products = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen1, setDropdownOpen1] = useState(false);
+  const [dropdownOpen2, setDropdownOpen2] = useState(false);
+  const [dropdownOpen3, setDropdownOpen3] = useState(false);
+  const [dropdownOpen4, setDropdownOpen4] = useState(false);
+  const [dropdownOpen5, setDropdownOpen5] = useState(false);
   const [data, setData] = useState(null);
   useEffect(() => {
    setData(Data)
@@ -43,9 +48,13 @@ const Products = () => {
   const density = ["150", "180", "200", "230"];
   const frontal = ["4*4", "13*4", "360"];
   const quality = ["10A", "8A"];
-  const type2 = ["bundles", "wig"]
-
+  const type2 = ["bundles", "wig"];
   const toggle = () => setDropdownOpen(prevState => !prevState);
+  const toggle1 = () => setDropdownOpen1(prevState => !prevState);
+  const toggle2 = () => setDropdownOpen2(prevState => !prevState);
+  const toggle3 = () => setDropdownOpen3(prevState => !prevState);
+  const toggle4 = () => setDropdownOpen4(prevState => !prevState);
+  const toggle5 = () => setDropdownOpen5(prevState => !prevState);
   return (
     <div>
       <h1 className="row">
@@ -60,7 +69,7 @@ const Products = () => {
           </Dropdown>
         </div>
         <div className="col-md-2">
-          <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+          <Dropdown isOpen={dropdownOpen1} toggle={toggle1}>
             <DropdownToggle caret>Length</DropdownToggle>
             <DropdownMenu>
               {length.map(item => (
@@ -71,7 +80,7 @@ const Products = () => {
         </div>
 
         <div className="col-md-2">
-          <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+          <Dropdown isOpen={dropdownOpen2} toggle={toggle2}>
             <DropdownToggle caret>Color</DropdownToggle>
             <DropdownMenu>
               {color.map(item => (
@@ -81,7 +90,7 @@ const Products = () => {
           </Dropdown>
         </div>
         <div className="col-md-2">
-          <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+          <Dropdown isOpen={dropdownOpen3} toggle={toggle3}>
             <DropdownToggle caret>Density</DropdownToggle>
             <DropdownMenu>
               {density.map(item => (
@@ -91,7 +100,7 @@ const Products = () => {
           </Dropdown>
         </div>
         <div className="col-md-2">
-          <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+          <Dropdown isOpen={dropdownOpen4} toggle={toggle4}>
             <DropdownToggle caret>Frontal</DropdownToggle>
             <DropdownMenu>
               {frontal.map(item => (
@@ -101,7 +110,7 @@ const Products = () => {
           </Dropdown>
         </div>
         <div className="col-md-2">
-          <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+          <Dropdown isOpen={dropdownOpen5} toggle={toggle5}>
             <DropdownToggle caret>Quality</DropdownToggle>
             <DropdownMenu>
               {quality.map(item => (
@@ -134,10 +143,10 @@ const Products = () => {
       </div>
       <div className="info">
         <div className="row">
-          <div className="price-details col-md-6">
-            <p className="details">
+          <div className="price-details col-md-12">
+            {/* <p className="details">
               Lorem ipsum dolor sit amet, consectetur..
-            </p>
+            </p> */}
             <h1>{type}</h1>
             <span className="price-new">{`$${price}`}</span>
           </div>

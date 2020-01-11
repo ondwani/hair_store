@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const User = require("../models/models");
 const bcrypt = require("bcrypt");
+const sgMail = require('@sendgrid/mail');
+require("dotenv").config();
 
 router.post("/register", (req, res) => {
   const { name, email, password, password2 } = req.body;
@@ -35,5 +37,19 @@ router.post("/register", (req, res) => {
     });
   }
 });
+
+router.post("/contact", (req, res)=>{
+  const {fname,lname, email, phoneNumber, text}=req.body;
+ console.log(req.body)
+sgMail.setApiKey(process.env.SG_KEY);
+const msg = {
+  to: 'daiziepink@gmail.com',
+  from: 'mail@deeshairstore.com',
+  subject: 'INQUIRY',
+  html: `<strong>Name: ${fname} ${lname} <br/>
+  Email: ${email} <br/> Phone Number: ${phoneNumber} <br/> Message:${text}</strong>`,
+};
+sgMail.send(msg);
+})
 
 module.exports = router;

@@ -124,11 +124,16 @@ padding-top: 50px;
 }
 .about {
 color: black;
-font-family:'Nunito', sans-serif ;
+font-family: 'DM Serif Display', serif;
+padding-left: 45%;
+padding-top: 5%;
+
 }
 .aboutpar {
-  color: white;
-  font-family: 'Nunito', sans-serif;
+  color: black;
+  font-family: 'DM Serif Display', serif;
+  
+ 
 }
 /* .Remember {
   padding: 10px
@@ -191,6 +196,7 @@ font-family:'Nunito', sans-serif ;
 .jumbo2 h1{
   font-family: 'Fira Sans', Semi-Bold Italic;
   background-color:#E1D7CA;
+  font-size: 40px;
 
 }
 .card{

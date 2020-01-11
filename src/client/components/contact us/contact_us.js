@@ -1,16 +1,27 @@
 import React, { useState } from "react";
 import { Link, Redirect } from "react-router-dom";
+import axios from "axios";
 import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const Contact_us = () => {
   const [contact, setContact] = useState(null);
+  const [response, setResponse] = useState(null);
   const handlechange = e => {
     const { name, value } = e.target;
     setContact({ ...contact, [name]: value });
   };
+  const onSubmit = () => {
+    axios
+      .post("/api/contact", contact)
+      .then(res => {
+        setResponse(res.data);
+      })
+      .catch(err => console.error(err));
+  };
   //   const sendMessage=()=>(
   //       <Redirect to="/" />
   //   )
+  console.log(contact)
   return (
     <div>
       <div className="split right">
@@ -29,12 +40,14 @@ const Contact_us = () => {
             <Row form>
               <Col md={6}>
                 <FormGroup>
-                  <Input type="text" name="fname" placeholder="First name" />
+                  <Input type="text" name="fname" placeholder="First name" 
+                  onChange={handlechange}/>
                 </FormGroup>
               </Col>
               <Col md={6}>
                 <FormGroup>
-                  <Input type="text" name="lname" placeholder="Last name" />
+                  <Input type="text" name="lname" 
+                  onChange={handlechange}placeholder="Last name" />
                 </FormGroup>
               </Col>
             </Row>
@@ -43,6 +56,7 @@ const Contact_us = () => {
               <Input
                 type="email"
                 name="email"
+                onChange={handlechange}
                 placeholder="Eg. example@email.com"
               />
             </FormGroup>
@@ -51,6 +65,7 @@ const Contact_us = () => {
               <Input
                 type="number"
                 name="phoneNumber"
+                onChange={handlechange}
                 placeholder="Eg. +254721000000"
               />
             </FormGroup>
@@ -60,14 +75,13 @@ const Contact_us = () => {
                 <Input
                   type="textarea"
                   name="text"
+                  onChange={handlechange}
                   placeholder="Write us a message"
                 />
               </Col>
             </FormGroup>
             <Link to="/">
-              <Button style={{ width: "40%" }} >
-                Send Message
-              </Button>
+              <Button onClick={onSubmit} style={{ width: "40%" }}>Send Message</Button>
             </Link>
           </Form>
         </div>

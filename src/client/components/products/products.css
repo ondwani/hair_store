@@ -72,12 +72,14 @@
 .col-item .price-details {
   width: 100%;
   margin-top: 5px;
+  color: black !important;
 }
 .col-item .price-details h1 {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
   float:left;
+  color: black !important;
 }
 .col-item .price-details .details {
   margin-bottom: 0px;

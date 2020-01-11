@@ -10,7 +10,7 @@ import Login from './components/login/login';
 import Navbar from "./components/navbar/navbar";
 import Shop from "./components/shop/shop";
 import Sale from "./components/sale/sale";
-
+import ProductList from './components/ProductListing/productList'
 
 
 
@@ -26,6 +26,7 @@ const App = () => (
        <Route path = "/contact" component = { Contactus } /> 
        <Route path = "/shop" component = { Shop }/>
        <Route path = "/sale" component = { Sale } />
+       <Route path="/productlist" component= {ProductList}/>
      </Switch>
    </Router>
    </div>
