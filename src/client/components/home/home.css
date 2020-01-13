@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 body {
   font-family: "Signika", sans-serif;
 }
@@ -102,13 +104,22 @@ a:hover {
 }
 
 .review {
-  padding: 3%;
+  padding-bottom: 2%;
+  padding-top: 0%;
 }
 
 .review h1 {
+  /* font-family: 'Oswald', sans-serif; */
   text-align: center !important ;
   color: black;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.review h5 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center !important ;
+  color: black;
+  font-size: 20px;
 }
 @media screen and (min-width: 750px) {
   .MuiGridListTile-tile {
@@ -124,4 +135,22 @@ a:hover {
 .MuiGridListTile-root {
   height: 22rem !important;
   width: 25% !important;
+}
+
+.store{
+  padding-top: 40%; 
+  color: black;
+  font-family: 'Fredericka the Great', cursive !important;
+}
+
+.gift{
+  padding-top: 40%; 
+  color: black;
+  font-family: 'Fredericka the Great', cursive !important;
+}
+
+.wholesale{
+  padding-top: 40%; 
+  color: black;
+  font-family: 'Fredericka the Great', cursive !important;
 }

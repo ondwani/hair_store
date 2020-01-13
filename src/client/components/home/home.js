@@ -62,28 +62,29 @@ const Home = () => {
   return (
     <div>
       <div className="row" id="home">
-        <div className="col-md-8">
+        <div className="col-md-12">
           <div className="jumbotron paral paralsec">
-            <h1 className="display-3" align="left">
+            <h1 className="display-2" >
               New Hair
             </h1>
+           
             <h1 className="display-3" align="right">
               New You
             </h1>
           </div>
         </div>
-        <div className="col-md jumbo2" align="center">
+        {/* <div className="col-md-4 jumbo2" align="center">
           <h1>Get Ksh5000 off when you spend Ksh50000 and above!</h1>
           <h5>Use Code: SLAYQUEEN</h5>
           <button className="btn ">SAVE NOW</button>
-        </div>
+        </div> */}
       </div>
       <div className="container review">
-        <h1 align="center">Good quality Hair at affordable prices</h1>
+        <h1 align="center">Get Ksh5000 off when you spend Ksh50000 and above</h1>
         <h5>
-          Follow us on instagram page to see more reviews, participate in
-          give aways and know more about pop-up stores around you
+        Use Code: SLAYQUEEN
         </h5>
+        <button className="btn code">SAVE NOW</button>
         </div>
       <CardDeck style={{ padding: "1%", marginTop: "-1.2rem" }}>
         <Card
@@ -95,7 +96,8 @@ const Home = () => {
           
           <CardBody>
             <div align="center">
-              <h4 style={{ paddingTop: "30%", color: "black" }}>
+              <h4 className = "store">
+              {/* style={{ paddingTop: "30%", color: "black"  }} */}
                 Visit our Store
               </h4>
               <Link to="/contact">
@@ -112,7 +114,7 @@ const Home = () => {
           }}
         >
           <CardBody align="center">
-            <h4 style={{ paddingTop: "30%" }}>Gift your loved one some Hair</h4>
+            <h4 className = "gift">Gift your loved one some Hair</h4>
             <Link to ="/shop">
             <Button>Shop now</Button>
             </Link>
@@ -125,7 +127,7 @@ const Home = () => {
           }}
         >
           <CardBody align="center">
-            <h4 style={{ paddingTop: "30%", color: "black" }}>
+            <h4 className="wholesale">
               Wholesale Bundles
             </h4>
             <Link to = "/shop">

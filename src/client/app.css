@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Fira+Sans|Playfair+Display+SC&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
 /* Split the screen in half */
 .split {
   height: 100%;
@@ -65,7 +70,12 @@
   color: white;
   font-family: 'Nunito', sans-serif;
   border-radius: 20px;
-  width: 100px;
+  /* width: 100px; */
+
+}
+.code{
+  margin-left: 45%;
+  font-family: 'Fredericka the Great', cursive !important;
 
 }
 .bg-dark{
@@ -161,20 +171,38 @@ padding-top: 5%;
 
 
 /* ----------------------home-------------------- */
+
+.mainlogo h3{
+  font-family: 'Fredericka the Great', cursive !important;
+  color: #f0bbb8!important;
+  
+}
 .paral{
   background: url("https://images.pexels.com/photos/2331539/pexels-photo-2331539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat;
   background-size: cover;
-  height: 65vh;
+  height: 90vh;
 }
 .paral p {
   font-size: 24px;
   color:#f5f5f5;
   line-height: 60px;
   }
-.display-3 {
-  font-family: 'DM Serif Display', serif;
-  color: #D8BFD8 !important;
+.display-2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 70px !important;
+  color: #f0bbb8 !important;
+  padding-top: 60px !important; 
+  padding-right: 58rem !important;
 }
+.display-3 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 70px !important;
+  color: #f0bbb8 !important;
+  padding-top: 220px !important;
+  padding-left: 61rem !important;
+}
+
+ 
  
   /* Heading for Parallax Section */ 
 .paral h1 {
@@ -191,14 +219,22 @@ padding-top: 5%;
     border-radius: 0 !important;
   }
 .jumbo2{
-  margin-top: 10%;
+  margin-top: 0%;
+  background: url("https://images.pexels.com/photos/556665/pexels-photo-556665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
-.jumbo2 h1{
-  font-family: 'Fira Sans', Semi-Bold Italic;
-  background-color:#E1D7CA;
-  font-size: 40px;
+/* .jumbo2 h1{
+  margin-top: 40%;
+  font-family: 'Fredericka the Great', cursive;
+  
+  font-size: 30px;
+  color: black;
+}
 
-}
+.jumbo2 h5{
+  color: black;
+} */
 .card{
   border-radius: 0rem;
 }
