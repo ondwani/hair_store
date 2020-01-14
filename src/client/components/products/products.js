@@ -141,8 +141,7 @@ const Products = () => {
                   image
                 } = item;
                 return (
-                  <Link key={i} to={`/shop/${type}`}>
-                    <div className='col-sm-4'>
+                    <div className='col-sm-4' key={i}>
                       <article className='col-item'>
                         <div className='photo'>
                           <div className='options-cart'>
@@ -155,14 +154,13 @@ const Products = () => {
                               <span>Buy Now</span>
                             </button>
                           </div>
-                          <a href='#'>
-                            {' '}
+                          <Link key={i} to={`/shop/${type}`}>
                             <img
                               src={image}
                               className='img-responsive'
                               alt='Product Image'
-                            />{' '}
-                          </a>
+                            />
+                          </Link>
                         </div>
                         <div className='info'>
                           <div className='row'>
@@ -177,7 +175,7 @@ const Products = () => {
                         </div>
                       </article>
                     </div>
-                  </Link>
+                 
                 );
               })}
           </div>
