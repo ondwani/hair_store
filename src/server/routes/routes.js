@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const User = require("../models/models");
+const {User, Cart} = require("../models/models");
 const bcrypt = require("bcrypt");
 const sgMail = require('@sendgrid/mail');
 require("dotenv").config();
@@ -52,4 +52,10 @@ const msg = {
 sgMail.send(msg);
 })
 
+
+router.post("/addcart", async(req,res)=>{
+  console.log(req.body)
+const newItem = new Cart(req.body);
+await newItem.save();
+})
 module.exports = router;

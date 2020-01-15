@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./product.css";
 import axios from "axios";
+import "./product.css";
 import {
   Dropdown,
   DropdownToggle,
@@ -14,6 +14,7 @@ function ProductList({ match }) {
   const [dropdownOpen1, setDropdownOpen1] = useState(false);
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const [dropdownOpen3, setDropdownOpen3] = useState(false);
+  const [cart, setCart] =useState();
 
   const [product, setProduct] = useState(null);
   const { id } = match.params;
@@ -25,7 +26,12 @@ function ProductList({ match }) {
   const toggle2 = () => setDropdownOpen2(prevState => !prevState);
   const toggle3 = () => setDropdownOpen3(prevState => !prevState);
 
-  console.log(product);
+const addcart =async()=>{
+
+const cartsubmit=await axios.post("/api/addcart", cart )
+console.log(cartsubmit.data)
+}
+  console.log(cart);
   return (
     <div>
       {product &&
@@ -107,7 +113,7 @@ function ProductList({ match }) {
                     <div className="fw-size-choose">
                       <p>Length</p>
                       {length.map((data, i) => (
-                        <div className="sc-item">
+                        <div className="sc-item" onClick={(e)=>{e.preventDefault();setCart({...cart, length:data})}}>
                           <input type="radio" name="sc" id="xs-size" />
                           <label htmlFor="xs-size">
                             {data.replace("inch", "")}
@@ -121,17 +127,17 @@ function ProductList({ match }) {
                           <DropdownToggle caret>Color</DropdownToggle>
                           <DropdownMenu>
                             {color.map(item => (
-                              <DropdownItem key={item}>{item}</DropdownItem>
+                              <DropdownItem key={item} onClick={()=>{setCart({...cart, color:item, type:type})}}>{item}</DropdownItem>
                             ))}
                           </DropdownMenu>
                         </Dropdown>
                       </div>
                       <div className="col-md-2">
                         <Dropdown isOpen={dropdownOpen1} toggle={toggle1}>
-                          <DropdownToggle caret>Length</DropdownToggle>
+                          <DropdownToggle caret>Quality</DropdownToggle>
                           <DropdownMenu>
                             {quality.map(item => (
-                              <DropdownItem key={item}>{item}</DropdownItem>
+                              <DropdownItem onClick={()=>{setCart({...cart, quality:item})}} key={item}>{item}</DropdownItem>
                             ))}
                           </DropdownMenu>
                         </Dropdown>
@@ -139,10 +145,20 @@ function ProductList({ match }) {
 
                       <div className="col-md-2">
                         <Dropdown isOpen={dropdownOpen2} toggle={toggle2}>
-                          <DropdownToggle caret>Color</DropdownToggle>
+                          <DropdownToggle caret>Frontal</DropdownToggle>
                           <DropdownMenu>
                             {frontal.map(item => (
-                              <DropdownItem key={item}>{item}</DropdownItem>
+                              <DropdownItem key={item} onClick={()=>{setCart({...cart, frontal:item})}}>{item}</DropdownItem>
+                            ))}
+                          </DropdownMenu>
+                        </Dropdown>
+                      </div>
+                      <div className="col-md-2">
+                        <Dropdown isOpen={dropdownOpen3} toggle={toggle3}>
+                          <DropdownToggle caret>Density</DropdownToggle>
+                          <DropdownMenu>
+                            {density.map(item => (
+                              <DropdownItem key={item} onClick={()=>{setCart({...cart, density:item})}}>{item}</DropdownItem>
                             ))}
                           </DropdownMenu>
                         </Dropdown>
@@ -160,7 +176,7 @@ function ProductList({ match }) {
                         SHOP NOW
                       </a>
                     </span>
-                    <a href="#" className="site-btn">
+                    <a href="#" className="site-btn" onClick={addcart}>
                       ADD TO CART
                     </a>
                     <div id="accordion" className="accordion-area">
@@ -184,21 +200,14 @@ function ProductList({ match }) {
                         >
                           <div className="panel-body">
                             <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Proin pharetra tempor so dales. Phasellus
-                              sagittis auctor gravida. Integer bibendum sodales
-                              arcu id te mpus. Ut consectetur lacus leo, non
-                              scelerisque nulla euismod nec.
+                              We allow you to customize your wigs al by yourself so that you get exactly what you want and how you want it. You can pick the length, color, density, frontal and quality of hair you desire and have it made to those specifications. 
                             </p>
                             <p>
                               Approx length 66cm/26" (Based on a UK size 8
                               sample)
                             </p>
                             <p>Mixed fibres</p>
-                            <p>
-                              The Model wears a UK size 8/ EU size 36/ US size 4
-                              and her height is 5'8"
-                            </p>
+                           
                           </div>
                         </div>
                       </div>

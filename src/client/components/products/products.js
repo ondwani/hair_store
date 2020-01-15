@@ -145,14 +145,11 @@ const Products = () => {
                       <article className='col-item'>
                         <div className='photo'>
                           <div className='options-cart'>
-                            <span>
-                              <button className='btn ' title='Add to cart'>
-                                <span>Add to Cart</span>
-                              </button>
-                            </span>
-                            <button className='btn ' title='Add to cart'>
+                            <Link key={i} to={`/shop/${type}`}>
+                            <button className='btn ' >
                               <span>Buy Now</span>
                             </button>
+                            </Link>
                           </div>
                           <Link key={i} to={`/shop/${type}`}>
                             <img

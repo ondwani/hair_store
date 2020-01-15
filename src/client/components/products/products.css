@@ -47,12 +47,13 @@
 }
 .options-cart button {
     border-radius: 3%;
+     
 }
 .col-item .options-cart button {
   border-radius: 5%;
   padding:6px ;
   margin: 20px;
-  
+  margin-left: 20%;
 }
 .col-item .options-cart button .fa {
   font-size:22px;

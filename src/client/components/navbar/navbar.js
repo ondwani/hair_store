@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav style={{borderBottom:"1px #ffff solid"}} className = "navbar navbar-expand-md navbar-dark bg-dark">
          <div className = "container-fluid">
-             <a className = "navbar-brand mainlogo"><h3>DEE'S HAIR STORE </h3></a>
+             <a className = "navbar-brand mainlogo"><h3 >DEE'S HAIR STORE </h3></a>
              <ul className = "navbar-nav mr-auto">              
                  <li className = "nav-item" >
                  <NavLink to = "/" className = "nav-link" >
