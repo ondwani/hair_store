@@ -1,0 +1,253 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Fira+Sans|Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-image: url('https://images.unsplash.com/photo-1531889334630-8e71077eade4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+.left1 {
+  left: 0;
+  background-image: url('https://images.unsplash.com/photo-1531889334630-8e71077eade4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.centered h2 {
+  color: black;
+  padding-bottom: 30px;
+}
+
+.loginput {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px black;
+  width: 90%;
+}
+
+.btn {
+  background: black;
+  margin-top: 15px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 20px;
+  /* width: 100px; */
+}
+.code {
+  margin-left: 45%;
+  font-family: 'Fredericka the Great', cursive !important;
+}
+.bg-dark {
+  background: black !important;
+}
+.Signup {
+  padding-top: 50px;
+}
+.Signup a {
+  color: black;
+}
+
+.signupimg {
+  background-image: url('https://images.unsplash.com/photo-1531889334630-8e71077eade4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+
+.Terms {
+  padding-top: 20px;
+}
+/* .mail{
+  background: url(./assets/icons/envelope.svg) no-repeat scroll 7px 7px;
+  padding-left:30px; 
+} */
+
+/* -------------------- */
+#input_container {
+  position: relative;
+  padding: 0 0 0 20px;
+  margin: 0 20px;
+  background: #ddd;
+  direction: rtl;
+  width: 200px;
+  border: none;
+}
+#input {
+  border: none;
+  height: 20px;
+  margin: 0;
+  padding-right: 30px;
+  width: 100%;
+}
+#input_img {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  width: 22px;
+  height: 24px;
+}
+.background {
+  background-image: url('https://images.unsplash.com/photo-1504576249-c00dd23c481c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutcoll h2 {
+  color: black;
+  font-family: 'Fredericka the Great', cursive !important;
+  padding-left: 45%;
+  padding-top: 14%;
+  font-size: 50px !important;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+.aboutcoll p {
+  color: black;
+  font-family: 'Fredericka the Great', cursive !important;
+  text-align: center;
+}
+.aboutcoll {
+  float: left;
+  margin-top: 22%;
+  margin-left: 13%;
+  width: 40%;
+  font-size: 25px;
+}
+
+/* -------------------contact-------------------- */
+.contactleft {
+  left: 0;
+  background: url('https://images.unsplash.com/photo-1531889334630-8e71077eade4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')
+    no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 200px;
+}
+.contactus h5 {
+  font-size: medium;
+  padding-top: 10px;
+}
+.contactus h3 {
+  padding-top: 50px;
+}
+
+/* ----------------------home-------------------- */
+
+.mainlogo h3 {
+  font-family: 'Fredericka the Great', cursive !important;
+  color: #f0bbb8 !important;
+}
+.paral {
+  background: url('https://images.pexels.com/photos/2331539/pexels-photo-2331539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+    no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+.paral p {
+  font-size: 24px;
+  color: #f5f5f5;
+  line-height: 60px;
+}
+.display-2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 70px !important;
+  color: #f0bbb8 !important;
+  padding-top: 60px !important;
+  padding-right: 58rem !important;
+}
+.display-3 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 70px !important;
+  color: #f0bbb8 !important;
+  padding-top: 220px !important;
+  padding-left: 61rem !important;
+}
+
+/* Heading for Parallax Section */
+.paral h1 {
+  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  padding-top: 60px;
+  line-height: 100px;
+}
+.btn-header {
+  width: 13%;
+}
+.jumbotron {
+  border-radius: 0 !important;
+}
+.jumbo2 {
+  margin-top: 0%;
+  background: url('https://images.pexels.com/photos/556665/pexels-photo-556665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.card {
+  border-radius: 0rem;
+}
+
+.image-5-wig {
+  color: white;
+  background-image: url(https://images.pexels.com/photos/1537496/pexels-photo-1537496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-7-tools {
+  color: black;
+  background: url(https://www.mybeauty88.my/image/yiccomax/image/cache/data/hair_tool_banner-865x356.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shopHeader {
+  background: url('https://images.pexels.com/photos/953266/pexels-photo-953266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.saleHeader {
+  background: url('https://images.pexels.com/photos/1591055/pexels-photo-1591055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
