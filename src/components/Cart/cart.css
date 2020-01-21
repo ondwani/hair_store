@@ -1,0 +1,10 @@
+.pull-left {
+  padding: 8px;
+}
+.media-heading > a {
+  color: black;
+  font-weight: bolder;
+}
+.media-heading > a:hover {
+  color: rgb(51, 51, 51) !important;
+}

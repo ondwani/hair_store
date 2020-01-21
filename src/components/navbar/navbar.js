@@ -72,14 +72,14 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to='/login' className='nav-link'>
+            <NavLink to='/cart' className='nav-link'>
               <IconButton aria-label='cart'>
                 <StyledBadge
                   anchorOrigin={{
                     vertical: 'top',
                     horizontal: 'right'
                   }}
-                  badgeContent={cartItems.length > 0 ? cartItems.length : '0'}
+                  badgeContent={cartItems.length > 0 ? cartItems.length : '2'}
                   color='secondary'
                 >
                   <Cart color='secondary' />
