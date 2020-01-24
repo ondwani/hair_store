@@ -77,6 +77,7 @@ export default function Cart() {
                           style={{ width: '72px', height: '72px' }}
                         />{' '}
                       </Link>
+                      
                       <div className='media-body'>
                         <h4 className='media-heading'>
                           <Link to='#'>Body wave</Link>
