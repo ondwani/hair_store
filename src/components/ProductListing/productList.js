@@ -50,7 +50,7 @@ function ProductList({ match }) {
                       style={{ overflow: 'hidden', outline: 'none' }}
                     >
                       <div className='product-thumbs-track'>
-                        <div
+                        {/* <div
                           className='pt active'
                           data-imgbigurl='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
                         >
@@ -58,7 +58,7 @@ function ProductList({ match }) {
                             src='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
                             alt=''
                           />
-                        </div>
+                        </div> */}
                         <div
                           className='pt'
                           data-imgbigurl='img/single-product/2.jpg'
