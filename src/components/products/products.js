@@ -128,20 +128,14 @@ const Products = () => {
           <div className='row'>
             {data &&
               data.map((item, i) => {
-                const {
-                  type,
-                  price,
-                  image
-                } = item;
+                const { type, price, image } = item;
                 return (
                   <div className='col-sm-4' key={i}>
                     <article className='col-item'>
                       <div className='photo'>
                         <div className='options-cart'>
                           <Link key={i} to={`/shop/${type}`}>
-                            <button className='btn '>
-                              <span>Buy Now</span>
-                            </button>
+                            <button className='btn '>Buy Now</button>
                           </Link>
                         </div>
                         <Link key={i} to={`/shop/${type}`}>
