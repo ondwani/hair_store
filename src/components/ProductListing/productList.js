@@ -51,11 +51,10 @@ function ProductList({ match }) {
                     >
                       <div className='product-thumbs-track'>
                         <div
-                          className='pt active'
-                          data-imgbigurl='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-                        >
+                          className='pt active'>
+
                           <img
-                            src='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                            src='https://xcdn.unice.com/media/catalog/product/cache/6/image/700x700/9df78eab33525d08d6e5fb8d27136e95/2/_/2_51_1.jpg'
                             alt=''
                           />
                         </div>

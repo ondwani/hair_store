@@ -139,18 +139,24 @@ a:hover {
 
 .store{
   padding-top: 40%; 
-  color: black;
+  color: white;
   font-family: 'Fredericka the Great', cursive !important;
+  font-weight: 1000;
+  text-decoration: underline;
 }
 
 .gift{
   padding-top: 40%; 
-  color: black;
+ color: white;
   font-family: 'Fredericka the Great', cursive !important;
+  font-weight: 1000;
+  text-decoration: underline;
 }
 
 .wholesale{
   padding-top: 40%; 
-  color: black;
+  color: white;
   font-family: 'Fredericka the Great', cursive !important;
+  font-weight: 1000;
+  text-decoration: underline;
 }

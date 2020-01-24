@@ -3,11 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Fira+Sans|Playfair+Display+SC&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
 /* Split the screen in half */
 .split {
   height: 100%;
@@ -33,6 +30,7 @@
 .right {
   right: 0;
   background-color: rgb(255, 255, 255);
+  
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -157,11 +155,30 @@
     no-repeat;
   background-size: cover;
   color: white;
-  padding: 200px;
+  padding-top: 210px ;
+  padding-left: 100px;
+ 
+  
 }
+.contactleft h5 {
+  color: black !important;
+  font-family: 'Fredericka the Great', cursive !important;
+  font-size: 30px !important;
+  font-weight: 600;
+}
+.contactleft h6{
+  color: white !important;
+  font-family: 'Fredericka the Great', cursive !important;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
 .contactus h5 {
   font-size: medium;
   padding-top: 10px;
+ 
+
+ 
 }
 .contactus h3 {
   padding-top: 50px;
@@ -225,17 +242,23 @@
 }
 
 .image-5-wig {
-  color: white;
+  color: black;
   background-image: url(https://images.pexels.com/photos/1537496/pexels-photo-1537496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Fredericka the Great', cursive !important;
+  text-decoration: underline;
 }
+
 
 .image-7-tools {
   color: black;
   background: url(https://www.mybeauty88.my/image/yiccomax/image/cache/data/hair_tool_banner-865x356.png);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Fredericka the Great', cursive !important;
+  font-weight: 1000, bolder !important;
+  text-decoration: underline;
 }
 
 .shopHeader {

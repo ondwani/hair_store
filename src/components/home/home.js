@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./home.css";
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
@@ -31,30 +31,35 @@ const useStyles = makeStyles(theme => ({
 
 const tileData = [
   {
-    img: "https://fineartsbd.com/wp-content/uploads/2019/06/fascinating-bob-hairstyles-for-black-women-6.jpg",
+    img:
+      "https://fineartsbd.com/wp-content/uploads/2019/06/fascinating-bob-hairstyles-for-black-women-6.jpg",
     title: "",
     author: "author"
   },
   {
-    img: "https://cdn.shopify.com/s/files/1/0269/2245/1047/products/f59ecb2b80b7bd2deac75c54e2894510_fb26cd2f-ffba-469e-8815-e65bea2aef49_590x.png?v=1577970671",
+    img:
+      "https://cdn.shopify.com/s/files/1/0269/2245/1047/products/f59ecb2b80b7bd2deac75c54e2894510_fb26cd2f-ffba-469e-8815-e65bea2aef49_590x.png?v=1577970671",
     // title: "Image",
     author: "author"
   },
   {
-    img: "https://assets.bigcartel.com/product_images/243414719/__3c+skin++hait10ggg10bbf5222ggfgfgggggfhfggf.jpg?auto=format&fit=max&h=1000&w=1000",
+    img:
+      "https://assets.bigcartel.com/product_images/243414719/__3c+skin++hait10ggg10bbf5222ggfgfgggggfhfggf.jpg?auto=format&fit=max&h=1000&w=1000",
     // title: "Image",
     author: "author"
   },
   {
-    img: "https://4.bp.blogspot.com/-0T9Ji-5V2KU/WdXNxbtMQlI/AAAAAAAAH8g/K-mNxM2ICtg2vzDKqXEOrXK1LNcd6P0BgCLcBGAs/s1600/Nancie%2BMwai%2BNew%2BHair%2B%25283%2529.jpg",
+    img:
+      "https://4.bp.blogspot.com/-0T9Ji-5V2KU/WdXNxbtMQlI/AAAAAAAAH8g/K-mNxM2ICtg2vzDKqXEOrXK1LNcd6P0BgCLcBGAs/s1600/Nancie%2BMwai%2BNew%2BHair%2B%25283%2529.jpg",
     // title: "Image",
     author: "author"
   },
   {
-   img: "https://www.sensationnel.com/wp-content/uploads/Empire_WigSAP_S_Jean_main-600x800.jpg",
-  //  title: "Image",
-   author: "author"
- }
+    img:
+      "https://www.sensationnel.com/wp-content/uploads/Empire_WigSAP_S_Jean_main-600x800.jpg",
+    //  title: "Image",
+    author: "author"
+  }
 ];
 
 const Home = () => {
@@ -64,10 +69,8 @@ const Home = () => {
       <div className="row" id="home">
         <div className="col-md-12">
           <div className="jumbotron paral paralsec">
-            <h1 className="display-2" >
-              New Hair
-            </h1>
-           
+            <h1 className="display-2">New Hair</h1>
+
             <h1 className="display-3" align="right">
               New You
             </h1>
@@ -80,79 +83,77 @@ const Home = () => {
         </div> */}
       </div>
       <div className="container review">
-        <h1 align="center">Get Ksh5000 off when you spend Ksh50000 and above</h1>
-        <h5>
-        Use Code: SLAYQUEEN
-        </h5>
+        <h1 align="center">
+          Get Ksh5000 off when you spend Ksh50000 and above
+        </h1>
+        <h5>Use Code: SLAYQUEEN</h5>
         <button className="btn code">SAVE NOW</button>
-        </div>
-      <CardDeck style={{ padding: "1%", marginTop: "-1.2rem" }}>
-        <Card
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/65438/pexels-photo-65438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
-          }}
-        >
-          
-          <CardBody>
-            <div align="center">
-              <h4 className = "store">
-              {/* style={{ paddingTop: "30%", color: "black"  }} */}
-                Visit our Store
-              </h4>
-              <Link to="/contact">
-              <Button>Location</Button>
+      </div>
 
+      <div className="shb">
+        <CardDeck style={{ padding: "1%", marginTop: "-1.2rem" }}>
+          <Card
+            style={{
+              backgroundImage:
+                "url(https://images.pexels.com/photos/65438/pexels-photo-65438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
+            }}
+          >
+            <CardBody>
+              <div align="center">
+                <h4 className="store">
+                  {/* style={{ paddingTop: "30%", color: "black"  }} */}
+                  Visit our Store
+                </h4>
+                <Link to="/contact">
+                  <Button>Location</Button>
+                </Link>
+              </div>
+            </CardBody>
+          </Card>
+          <Card
+            style={{
+              backgroundImage:
+                "url(https://images.pexels.com/photos/842876/pexels-photo-842876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
+            }}
+          >
+            <CardBody align="center">
+              <h4 className="gift">Gift your loved one some Hair</h4>
+              <Link to="/shop">
+                <Button>Shop now</Button>
               </Link>
-            </div>
-          </CardBody>
-        </Card>
-        <Card
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/842876/pexels-photo-842876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
-          }}
-        >
-          <CardBody align="center">
-            <h4 className = "gift">Gift your loved one some Hair</h4>
-            <Link to ="/shop">
-            <Button>Shop now</Button>
-            </Link>
-          </CardBody>
-        </Card>
-        <Card
-          style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1562182856-e39faab686d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)"
-          }}
-        >
-          <CardBody align="center">
-            <h4 className="wholesale">
-              Wholesale Bundles
-            </h4>
-            <Link to = "/shop">
-            <Button>Shop now</Button>
-            </Link>
-           
-          </CardBody>
-        </Card>
-      </CardDeck>
+            </CardBody>
+          </Card>
+          <Card
+            style={{
+              backgroundImage:
+                "url(https://images.unsplash.com/photo-1562182856-e39faab686d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)"
+            }}
+          >
+            <CardBody align="center">
+              <h4 className="wholesale">Wholesale Bundles</h4>
+              <Link to="/shop">
+                <Button>Shop now</Button>
+              </Link>
+            </CardBody>
+          </Card>
+        </CardDeck>
+      </div>
+
       <div className="container review">
         <h1 align="center">Hair Products and Tools are also available</h1>
         <h5>
-          Follow us on instagram page to see more reviews, participate in
-          give aways and know more about pop-up stores around you
+          Follow us on instagram page to see more reviews, participate in give
+          aways and know more about pop-up stores around you
         </h5>
-        </div>
+      </div>
       <div className="row" style={{ padding: "1%", paddingLeft: "2%" }}>
         <div align="center" className="col-md-6 image-5-wig">
-          <h4 style={{ paddingTop: "60%", color: "black" }}>
+          <h4 style={{ paddingTop: "60%", fontWeight:"1000"}}>
             Looking for your first wig. We got you
           </h4>
-          <Link to = "/shop">
-          <button className="btn">Shop now</button>
+          <Link to="/shop">
+            <button className="btn">Shop now</button>
           </Link>
-          
         </div>
         <div className="col-md-6">
           <div
@@ -165,11 +166,13 @@ const Home = () => {
               marginBottom: "1rem"
             }}
           >
-            <h5 style={{ paddingTop: "30%", color:"black"  }}>Oils Available</h5>
+            <h5 style={{ paddingTop: "30%", color:'white', fontWeight:"1000", fontFamily: 'Fredericka the Great, cursive', textDecoration:'underline'}}>
+              Oils Available
+            </h5>
             <button className="btn">Shop now</button>
           </div>
           <div className="image-7-tools" align="center">
-            <h5 style={{ paddingTop: "30%" }}>Tools Available</h5>
+            <h5 style={{ paddingTop: "40%" , fontWeight:"1000"}}>Tools Available</h5>
             <button className="btn">Shop now</button>
           </div>
         </div>
@@ -177,8 +180,8 @@ const Home = () => {
       <div className="container review">
         <h1 align="center">Follow us on Instagram</h1>
         <h5>
-          Follow us on instagram page to see more reviews, participate in
-          give aways and know more about pop-up stores around you
+          Follow us on instagram page to see more reviews, participate in give
+          aways and know more about pop-up stores around you
         </h5>
       </div>
       <div className={classes.root}>
@@ -240,7 +243,7 @@ const Home = () => {
                     <div className="col-md-6 px-4">
                       <ul>
                         <li>
-                          <a  href="#home"> Home</a>{" "}
+                          <a href="#home"> Home</a>{" "}
                         </li>
                         <li>
                           <Link to="/shop"> Shop</Link>{" "}

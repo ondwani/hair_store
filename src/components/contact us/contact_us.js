@@ -26,9 +26,9 @@ const Contact_us = () => {
   return (
     <div>
       <div className="split right">
-        <div className="split contactleft">
-          <h5>Address</h5>
-          <h6>Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</h6>
+        <div className="split contactleft" style={{color:"white !important"}}>
+          <h5 >Address</h5>
+          <h6>K City 8th floor, Oginga Street, Kisumu,  10018 KE</h6>
           <h5>Let's talk</h5>
           <h6>+254727000000</h6>
           <h5>General Support</h5>
