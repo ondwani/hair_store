@@ -251,3 +251,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.MuiSvgIcon-colorSecondary {
+  color: #ddd !important;
+  display: inline-block;
+}
+.MuiIconButton-root {
+  padding: 0 !important;
+}

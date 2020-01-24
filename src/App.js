@@ -1,6 +1,6 @@
 import React from 'react';
 import './app.css';
-import 'antd/dist/antd.css'
+import 'antd/dist/antd.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from './components/home/home';
 import About from './components/about/about';
@@ -12,6 +12,7 @@ import Navbar from './components/navbar/navbar';
 import Shop from './components/shop/shop';
 import Sale from './components/sale/sale';
 import ProductList from './components/ProductListing/productList';
+import Cart from './components/Cart/Cart';
 
 const App = () => (
   <div>
@@ -26,6 +27,7 @@ const App = () => (
         <Route path='/shop' exact component={Shop} />
         <Route path='/sale' component={Sale} />
         <Route path='/shop/:id' component={ProductList} />
+        <Route path='/cart' component={Cart} />
       </Switch>
     </Router>
   </div>
